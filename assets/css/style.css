@@ -22,6 +22,11 @@ body {
   margin: 10px 5px;
 }
 
+.header-selected {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
 .project-search-clear,
 .project-selected,
 .project-title {

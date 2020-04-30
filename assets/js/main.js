@@ -12,13 +12,15 @@ let finalWord
 // })   
 
 function clearFormattedWord() {
-	return formattedWord = [];
+	formattedWord = [];
+	renderHeader(null)
 }
 
 function audioPlay(idAudio) {
 	let audio = new Audio('assets/audio/' + idAudio + '.mp3')
 	audio.play()
 	formattingWord(idAudio)
+	renderHeader(idAudio)
 	console.log('idAudio ' + idAudio)
 }
 
@@ -41,7 +43,7 @@ function searchFormattedWord() {
 			})
 		})
 	formattedWord = []
-
+	renderHeader(null)
 }
 
 function formattingWord(id) {
@@ -58,7 +60,6 @@ function formattingWord(id) {
 	// 			.then(function (response) {
 	// 				console.log(response.data.hits[0].webformatURL)
 	// 				finalImg = response.data.hits[0].webformatURL
-
 	// 			})
 	// 			.then(function (error) {
 	// 				console.log(error)
