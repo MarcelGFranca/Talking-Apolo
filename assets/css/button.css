@@ -15,23 +15,19 @@
 }
 
 .sound-button {
+  box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
+  color: #fff;
   display: inline-block;
-  /* margin-top: 20%; */
+  font-size: 50px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   -webkit-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
   -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
   -moz-transition: -moz-box-shadow 0.1s ease-in-out;
   -o-transition: -o-box-shadow 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out;
-  font-size: 50px;
-  color: #fff;
-}
-
-.button-project {
 }
 
 .sound-button-header span,
@@ -40,6 +36,7 @@
   padding: 10px 15px;
   background-color: #ec528d;
   text-transform: capitalize;
+  min-width: 60px;
   background-image: -webkit-gradient(
     linear,
     0% 0%,
