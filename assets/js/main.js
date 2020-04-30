@@ -1,9 +1,5 @@
-let consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z']
-let vowels = ['a', 'e', 'i', 'o', 'u' ]
-
 let formattedWord = []
 
-  // let textInput = document.querySelector('.sound-button')                                      
   let timeout = null                                      
                                      
   document.addEventListener('click', function(e) {                                      
@@ -15,11 +11,8 @@ let formattedWord = []
 
 function audioPlay(idAudio) {
 	let audio = new Audio('assets/audio/' + idAudio + '.mp3')
-
 	audio.play()
-
 	formattingWord(idAudio)
-
 	console.log('idAudio ' + idAudio)
 }
 
@@ -56,6 +49,7 @@ function formattingWord(id) {
 	})
 }
 
-function htmlRender() {
-
+window.onload = function() {
+	renderHtml()
 }
+

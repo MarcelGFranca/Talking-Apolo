@@ -1,3 +1,3 @@
 let words = [
-	'macaco'
+	'macaco', 'cama', 'boca'
 ]
