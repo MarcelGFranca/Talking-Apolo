@@ -33,14 +33,24 @@ function formattingWord(id) {
 
 	words.forEach( function(key) {
 		if(key == finalWord) {
-			console.log('workd')
+
+			axios.get('https://pixabay.com/api/?key=16309043-af699687042223e3c6eb97108&q=' + finalWord + '&image_type=photo&pretty=true&safesearch=true&image_type=photo&lang=pt')
+				.then(function (response) {
+					console.log(response.data.hits[0].webformatURL)
+					finalImg = response.data.hits[0].webformatURL
+
+				})
+				.then(function (error) {
+					console.log(error)
+				})
+				.then(function () {
 			Swal.fire({
-				imageUrl: 'assets/images/' + finalWord + '.jpg',
-				imageWidth: 500,
-				imageHeight: 500,
+				imageUrl: finalImg,
 				title: 'A palavra é ',
+				text: finalWord,
 				timer: 4000
 			})
+				})
 			formattedWord = []
 		}
 	})
