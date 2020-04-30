@@ -87,6 +87,10 @@
   margin-left: 20px;
 }
 
+.footer-button {
+  font-size: 20px;
+}
+
 .sound-button:active,
 .sound-button:focus {
   -webkit-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, 0.3);
