@@ -1,4 +1,4 @@
-let consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'qu', 'r', 's', 't', 'v', 'x', 'z']
+let consonants = ['b', 'c', 'd', 'f', 'g', /*'h' */, 'j', /*'k'*/, 'l', 'm', 'n', 'p', 'qu', 'r', 's', 't', 'v', /*'x', 'z'*/]
 let vowels = ['a', 'e', 'i', 'o', 'u', 'ão']
 let inexistentEncounters = ['yi', 'quu', 'kão', 'wão', 'yão']
 let renderDashboard = ''
@@ -6,7 +6,6 @@ let renderDashboard = ''
 function renderHtml() {
 
 	renderDashboard += '<div class="card-column">'
-	renderDashboard += renderButton(null, null)
 
 	vowels.forEach (function (vowelKey) {
 		renderDashboard += renderButton(vowelKey, null)
@@ -26,6 +25,10 @@ function renderHtml() {
 
 	document.getElementById('project-main').innerHTML = renderDashboard
 	console.log(renderDashboard)
+}
+
+function renderEmptyButton() {
+	return `<div class="card-button"><a class="sound-button-empty"><span></span></a></div>`
 }
 
 function renderButton(idVowel, idConsonant) {
