@@ -30,13 +30,13 @@ function renderHtml() {
 
 function renderButton(idVowel, idConsonant) {
 	if (idVowel == null) {
-	return '<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay(' + idConsonant + ')"><span>' + idConsonant + '</span></a></div>'
+	return `<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay('${idConsonant}')"><span>${idConsonant}</span></a></div>`
 	} else if (idConsonant == null){
-
-	return '<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay(' + idVowel + ')"><span>' + idVowel + '</span></a></div>'
-	} else {
-
-	return '<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay(' + idConsonant + idVowel + ')"><span>' + idConsonant + idVowel + '</span></a></div>'
+	return `<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay('${idVowel}')"><span>${idVowel}</span></a></div>`
+	} else if (idConsonant == null && idVowel == null){
+	return `<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay()"><span>+</span></a></div>`
+	}else {
+	return `<div class="card-button"><a href="#" class="sound-button" onclick="audioPlay('${idConsonant}${idVowel}')"><span>${idConsonant}${idVowel}</span></a></div>`
 	}
 }
 
