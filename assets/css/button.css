@@ -14,9 +14,9 @@
       format("truetype");
 }
 
-#button {
+.sound-button {
   display: inline-block;
-  margin-top: 20%;
+  /* margin-top: 20%; */
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -31,10 +31,15 @@
   color: #fff;
 }
 
-#button span {
+.button-project {
+}
+
+.sound-button-header span,
+.sound-button span {
   display: inline-block;
-  padding: 20px 30px;
+  padding: 10px 15px;
   background-color: #ec528d;
+  text-transform: capitalize;
   background-image: -webkit-gradient(
     linear,
     0% 0%,
@@ -74,20 +79,24 @@
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
 
-#button:hover span {
+.sound-button:hover span {
   background-color: #ec6a9c;
   text-shadow: 0 -1px 1px rgba(175, 49, 95, 0.9),
     0 0 5px rgba(255, 255, 255, 0.8);
 }
 
-#button:active,
-#button:focus {
+.project-button {
+  margin-left: 20px;
+}
+
+.sound-button:active,
+.sound-button:focus {
   -webkit-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, 0.3);
 }
 
-#button:active span {
+.sound-button:active span {
   -webkit-transform: translate(0, 4px);
   -moz-transform: translate(0, 4px);
   -o-transform: translate(0, 4px);
