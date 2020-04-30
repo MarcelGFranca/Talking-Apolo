@@ -3,8 +3,18 @@ let vowels = ['a', 'e', 'i', 'o', 'u' ]
 
 let formattedWord = []
 
+  // let textInput = document.querySelector('.sound-button')                                      
+  let timeout = null                                      
+                                     
+  document.addEventListener('click', function(e) {                                      
+    clearTimeout(timeout)    
+    timeout = setTimeout(function() {                                      
+      formattedWord = []                                      
+    }, 10000)                                      
+  })   
+
 function audioPlay(idAudio) {
-	let audio = new Audio('assets/audio/' + idAudio + '-apolo.mp3')
+	let audio = new Audio('assets/audio/' + idAudio + '.mp3')
 
 	audio.play()
 
@@ -24,11 +34,14 @@ function formattingWord(id) {
 	words.forEach( function(key) {
 		if(key == finalWord) {
 			console.log('workd')
-		} else {
-			// console.log('key ' + key)
-			// console.log('reducedArray ' + reducedArray)
-			// console.log('key type ' + typeof key)
-			// console.log('key reducedArray ' + typeof reducedArray)
+			Swal.fire({
+				imageUrl: 'assets/images/' + finalWord + '.jpg',
+				imageWidth: 500,
+				imageHeight: 500,
+				title: 'A palavra é ',
+				timer: 4000
+			})
+			formattedWord = []
 		}
 	})
 }
