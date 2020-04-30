@@ -19,155 +19,46 @@
   </head>
   <body>
     <div class="container">
-      <div class="project-header">
-        <a href="#" class="sound-button" onclick="audioPlay('a')">
-          <span>A</span>
-        </a>
-        <a href="#" class="sound-button" onclick="audioPlay('po')">
-          <span>Po</span>
-        </a>
-        <a href="#" class="sound-button" onclick="audioPlay('lo')">
-          <span>Lo</span>
-        </a>
-        <a
-          href="#"
-          class="project-button sound-button"
-          onclick="audioPlay('project')"
-        >
-          <span>Project</span>
-        </a>
-      </div>
-      <div class="project-main" id="project-main">
-        <!-- <div class="card card-column"> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('a')"> -->
-        <!--       <span></span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('a')"> -->
-        <!--       <span>a</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('e')"> -->
-        <!--       <span>e</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('i')"> -->
-        <!--       <span>i</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('o')"> -->
-        <!--       <span>o</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('u')"> -->
-        <!--       <span>u</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
+			<div class="project-header">
+				<div class="project-selected">
+				</div>
+				<div class="project-title">
+					<a
+						class="sound-button"
+						onclick="audioPlay('a')">
+						<span>A</span>
+					</a>
+					<a
+						class="sound-button"
+						onclick="audioPlay('po')">
+						<span>Po</span>
+					</a>
+					<a
+						class="sound-button"
+						onclick="audioPlay('lo')">
+						<span>Lo</span>
+					</a>
+					<a
+						class="project-button sound-button"
+						onclick="audioPlay('project')"
+						>
+						<span>Project</span>
+					</a>
+				</div>
+				<div class="project-search-clear">
+					<a
+						class="sound-button"
+						onclick="clearFormattedWord()">
+						<span>Apagar Palavra</span>
+					</a>
+					<a
+						class="sound-button"
+						onclick="searchFormattedWord()">
+						<span>Buscar</span>
+					</a>
 
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('ão')"> -->
-        <!--       <span>ão</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <!-1- <div class="card-button"> -1-> -->
-        <!--   <!-1-   <a href="#" class="sound-button" onclick="audioPlay('õe')"> -1-> -->
-        <!--   <!-1-     <span>õe</span> -1-> -->
-        <!--   <!-1-   </a> -1-> -->
-        <!--   <!-1- </div> -1-> -->
-        <!-- </div> -->
-        <!-- <div class="card card-column"> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('b')"> -->
-        <!--       <span>b</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('ba')"> -->
-        <!--       <span>ba</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('be')"> -->
-        <!--       <span>be</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bi')"> -->
-        <!--       <span>bi</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bo')"> -->
-        <!--       <span>bo</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bu')"> -->
-        <!--       <span>bu</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bão')"> -->
-        <!--       <span>bão</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <!-1- <div class="card-button"> -1-> -->
-        <!--   <!-1-   <a href="#" class="sound-button" onclick="audioPlay('Bõe')"> -1-> -->
-        <!--   <!-1-     <span>bõe</span> -1-> -->
-        <!--   <!-1-   </a> -1-> -->
-        <!--   <!-1- </div> -1-> -->
-        <!-- </div> -->
-        <!-- <div class="card card-column"> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('ma')"> -->
-        <!--       <span>ma</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('ca')"> -->
-        <!--       <span>ca</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('co')"> -->
-        <!--       <span>co</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('cão')"> -->
-        <!--       <span>cão</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bo')"> -->
-        <!--       <span>bo</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bu')"> -->
-        <!--       <span>bu</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-
-        <!--   <div class="card-button"> -->
-        <!--     <a href="#" class="sound-button" onclick="audioPlay('bão')"> -->
-        <!--       <span>bão</span> -->
-        <!--     </a> -->
-        <!--   </div> -->
-        <!--   <!-1- <div class="card-button"> -1-> -->
-        <!--   <!-1-   <a href="#" class="sound-button" onclick="audioPlay('Bõe')"> -1-> -->
-        <!--   <!-1-     <span>bõe</span> -1-> -->
-        <!--   <!-1-   </a> -1-> -->
-        <!--   <!-1- </div> -1-> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    </div>
-  </body>
+				</div>
+			</div>
+			<div class="project-main" id="project-main"></div>
+	</body>
 </html>

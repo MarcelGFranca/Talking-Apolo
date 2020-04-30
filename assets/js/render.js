@@ -24,7 +24,6 @@ function renderHtml() {
 	})
 
 	document.getElementById('project-main').innerHTML = renderDashboard
-	console.log(renderDashboard)
 }
 
 function renderEmptyButton() {
