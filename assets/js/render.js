@@ -1,9 +1,20 @@
+/**
+ * @file Render buttons on html index.
+ * @author Marcel Garcia França
+ * @version 0.2
+ */
+
 let consonants = ['b', 'c', 'd', 'f', 'g', /*'h' */, 'j', /*'k'*/, 'l', 'm', 'n', 'p', 'qu', 'r', 's', 't', 'v', /*'x', 'z'*/]
 let vowels = ['a', 'e', 'i', 'o', 'u', 'ão']
 let inexistentEncounters = ['yi', 'quu', 'kão', 'wão', 'yão']
 let renderDashboard = ''
 let renderHeaderHTMLButton = ''
- 
+
+/**
+ * @function Rendering the html on index via JavaScript.
+ *
+ * @param { String } renderDashboard - String with the html code to be rendered.
+ */
 function renderHtml() {
 
 	renderDashboard += '<div class="card-column">'
@@ -26,8 +37,10 @@ function renderHtml() {
 	document.getElementById('project-main').innerHTML = renderDashboard
 }
 
+/**
+ * @function Render the html of the header of the index.
+ */
 function renderHeader(id) {
-	console.log('renderHeader ' + id)
 	if (id == null) {
 		document.getElementById('project-selected').innerHTML = ''
 		renderHeaderHTMLButton = ''
@@ -37,10 +50,18 @@ function renderHeader(id) {
 	}
 }
 
+/**
+ * @function Render an empty button.
+ */
 function renderEmptyButton() {
 	return `<div class="card-button"><a class="sound-button-empty"><span></span></a></div>`
 }
 
+/**
+ * @function Render buttons.
+ *
+ * @returns Return a String based if the data entered is an consonant or a vowel.
+ */
 function renderButton(idVowel, idConsonant) {
 	if (idVowel == null) {
 		return `<div class="card-button"><a class="sound-button" onclick="audioPlay('${idConsonant}')"><span>${idConsonant}</span></a></div>`
