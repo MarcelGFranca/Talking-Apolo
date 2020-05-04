@@ -23,6 +23,8 @@
 		<meta name="apple-mobile-web-app-title" content="Talking Apolo">
 		<meta name="msapplication-starturl" content="/">
 
+		<meta name="theme_color" content="#2196F3">
+
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/button.css" />
 		<link
@@ -30,6 +32,18 @@
 			rel="stylesheet"
 			type="text/css"
 			/>
+		<script>
+			if('serviceWorkers' in navigator) {
+				navigator.serviceWorker
+				.register('./assets/js/sw.js')
+					.then(function() {
+						console.log('Serveice Worker registered successfully')
+					})
+					.catch(function() {
+						console.log('Service worker registration failed')
+					})
+			}
+			</script>
 	</head>
 	<body>
 		<div class="container">
