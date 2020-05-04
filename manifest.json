@@ -11,67 +11,67 @@
 	"orientation": "landscape",
 	"icons": [
 		{
-			"src": "/imgs/icon/apolo.png",
-			"type": "image/png",
-			"sizes": "512x512"
-		},
-		{
-			"src": "/imgs/icon/android-icon-192x192-1604.png",
+			"src": "/imgs/icon/android-icon-192x192.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-180x180-1604.png",
+			"src": "/imgs/icon/apple-icon-180x180.png",
 			"type": "image/png",
 			"sizes": "180x180"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-152x152-1604.png",
+			"src": "/imgs/icon/apple-icon-152x152.png",
 			"type": "image/png",
 			"sizes": "152x152"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-120x120-1604.png",
+			"src": "/imgs/icon/apple-icon-144x144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "/imgs/icon/apple-icon-120x120.png",
 			"type": "image/png",
 			"sizes": "120x120"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-114x114-1604.png",
+			"src": "/imgs/icon/apple-icon-114x114.png",
 			"type": "image/png",
 			"sizes": "114x114"
 		},
 		{
-			"src": "/imgs/icon/favicon-96x96-1604.png",
+			"src": "/imgs/icon/favicon-96x96.png",
 			"type": "image/png",
 			"sizes": "96x96"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-76x76-1604.png",
+			"src": "/imgs/icon/apple-icon-76x76.png",
 			"type": "image/png",
 			"sizes": "76x76"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-72x72-1604.png",
+			"src": "/imgs/icon/apple-icon-72x72.png",
 			"type": "image/png",
 			"sizes": "72x72"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-60x60-1604.png",
+			"src": "/imgs/icon/apple-icon-60x60.png",
 			"type": "image/png",
 			"sizes": "60x60"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-57x57-1604.png",
+			"src": "/imgs/icon/apple-icon-57x57.png",
 			"type": "image/png",
 			"sizes": "57x57"
 		},
 		{
-			"src": "/imgs/icon/favicon-32x32-1604.png",
+			"src": "/imgs/icon/favicon-32x32.png",
 			"type": "image/png",
 			"sizes": "32x32"
 		},
 		{
-			"src": "/imgs/icon/favicon-16x16-1604.png",
+			"src": "/imgs/icon/favicon-16x16.png",
 			"type": "image/png",
 			"sizes": "16x16"
 		}
