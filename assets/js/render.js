@@ -23,7 +23,6 @@ function renderHtml() {
 		})
 		renderDashboard += '</div>'
 	})
-
 	document.getElementById('project-main').innerHTML = renderDashboard
 }
 
@@ -34,7 +33,7 @@ function renderHeader(id) {
 		renderHeaderHTMLButton = ''
 	} else {
 		renderHeaderHTMLButton += renderHeaderButton(id)
-		document.getElementById('project-selected').innerHTML = renderHeaderHTMLButton 	
+		document.getElementById('project-selected').innerHTML = renderHeaderHTMLButton
 	}
 }
 
