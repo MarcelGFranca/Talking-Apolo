@@ -38,10 +38,10 @@
 					navigator.serviceWorker
 						.register('./sw.js')
 						.then(function() {
-							console.log('Service Worker registered successfully')
+							console.log('Service Worker registered successfully', registration.scope)
 						})
 						.catch(function() {
-							console.log('Service worker registration failed')
+							console.log('Service worker registration failed', error)
 						})
 				})
 			}

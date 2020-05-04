@@ -3,7 +3,7 @@
 	"name": "Talking Apolo Project",
 	"lang": "pt-br",
 	"description": "An syllabarium app to teach my son to talk.",
-	"start_url": "/",
+	"start_url": "https://marcelgfranca.github.io/Talking-Apolo/",
 	"background_color": "#00aae7",
 	"theme_color": "#00aae7",
 	"dir": "ltr",
