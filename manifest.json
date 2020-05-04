@@ -21,11 +21,6 @@
 			"sizes": "180x180"
 		},
 		{
-			"src": "/imgs/icon/apple-icon-152x152.png",
-			"type": "image/png",
-			"sizes": "152x152"
-		},
-		{
 			"src": "/imgs/icon/apple-icon-144x144.png",
 			"type": "image/png",
 			"sizes": "144x144"
