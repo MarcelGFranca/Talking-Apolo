@@ -33,17 +33,19 @@
 			type="text/css"
 			/>
 		<script>
-			if('serviceWorkers' in navigator) {
-				navigator.serviceWorker
-				.register('./assets/js/sw.js')
-					.then(function() {
-						console.log('Serveice Worker registered successfully')
-					})
-					.catch(function() {
-						console.log('Service worker registration failed')
-					})
+			if('serviceWorker' in navigator) {
+				window.addEventListener('load', function() {
+					navigator.serviceWorker
+						.register('/sw.js')
+						.then(function() {
+							console.log('Service Worker registered successfully')
+						})
+						.catch(function() {
+							console.log('Service worker registration failed')
+						})
+				})
 			}
-			</script>
+		</script>
 	</head>
 	<body>
 		<div class="container">
