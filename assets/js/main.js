@@ -1,3 +1,8 @@
+/**
+ * @file Main js file on program.
+ * @author Marcel Garcia França
+ * @version 0.2
+ */
 let formattedWord = []
 let reducedArray
 let finalWord
@@ -12,13 +17,11 @@ function audioPlay(idAudio) {
 	audio.play()
 	formattingWord(idAudio)
 	renderHeader(idAudio)
-	console.log('idAudio ' + idAudio)
 }
 
 function searchFormattedWord() {
 	axios.get('https://pixabay.com/api/?key=16309043-af699687042223e3c6eb97108&q=' + finalWord + '&image_type=photo&pretty=true&safesearch=true&image_type=photo&lang=pt')
 		.then(function (response) {
-			console.log(response.data.hits[0].webformatURL)
 			finalImg = response.data.hits[0].webformatURL
 
 		})
@@ -41,8 +44,6 @@ function formattingWord(id) {
 	formattedWord.push(id)
 	reducedArray = (accumulator, currentValue) => accumulator + currentValue
 	finalWord = formattedWord.reduce(reducedArray)
-	console.log('finalWord ' + finalWord)
-	console.log('formattedWord ' + formattedWord)
 }
 
 window.onload = function() {
