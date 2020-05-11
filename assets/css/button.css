@@ -5,20 +5,20 @@
  *
  */
 
-@font-face {
-  font-family: "Pacifico";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Pacifico"),
-    url("https://themes.googleusercontent.com/font?kit=fKnfV28XkldRW297cFLeqfesZW2xOQ-xsNqO47m55DA")
-      format("truetype");
-}
+/* @font-face { */
+/*   font-family: "Pacifico"; */
+/*   font-style: normal; */
+/*   font-weight: normal; */
+/*   src: local("Pacifico"), */
+/*     url("https://themes.googleusercontent.com/font?kit=fKnfV28XkldRW297cFLeqfesZW2xOQ-xsNqO47m55DA") */
+/*       format("truetype"); */
+/* } */
 
 .sound-button {
   box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
   color: #fff;
   display: inline-block;
-  font-size: 30px;
+  font-size: 28px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;

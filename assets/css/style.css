@@ -46,3 +46,9 @@ body {
 .project-footer {
   margin: 30px;
 }
+
+@media (max-width: 768px) {
+  .project-main {
+    margin: 0 25px;
+  }
+}
