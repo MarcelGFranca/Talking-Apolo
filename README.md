@@ -23,7 +23,6 @@ Há ainda algumas coisas a serem feitas:
 - Colocar sons em todos os botões (feito)
 
 * Transformar em PWA
-* Corrigir algums classes
 * Melhorar o código
 
 ## Contato
