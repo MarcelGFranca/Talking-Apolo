@@ -28,7 +28,7 @@ function renderHtml() {
 	consonants.forEach (function (consonantKey) {
 		renderDashboard += '<div class="card-column">'
 		renderButton(null, consonantKey)
-			renderDashboard += renderButton(null, consonantKey)
+			// renderDashboard += renderButton(null, consonantKey)
 			vowels.forEach (function (vowelKey) {
 			renderDashboard += renderButton(vowelKey, consonantKey)
 		})
