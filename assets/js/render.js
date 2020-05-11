@@ -1,7 +1,7 @@
 /**
  * @file Render buttons on html index.
  * @author Marcel Garcia França
- * @version 0.2
+ * @version 0.3
  */
 
 let consonants = ['b', 'c', 'd', 'f', 'g', /*'h' */, 'j', /*'k'*/, 'l', 'm', 'n', 'p', 'qu', 'r', 's', 't', 'v', /*'x', 'z'*/]
@@ -39,6 +39,7 @@ function renderHtml() {
 
 /**
  * @function Render the html of the header of the index.
+ * If the value is passed as null, the item is rendered without marking or value.
  */
 function renderHeader(id) {
 	if (id == null) {

@@ -3,6 +3,7 @@
  * @author Marcel Garcia França
  * @version 0.2
  */
+
 let formattedWord = []
 let reducedArray
 let finalWord
@@ -12,10 +13,26 @@ function clearFormattedWord() {
 	renderHeader(null)
 }
 
+function removeSyllabeFormattedWord() {
+	formattedWord.pop()
+	renderHeader(null)
+	for (const [key, value] of formattedWord) {
+		renderHeader( (key + value) )
+	}
+	reducedArray = (accumulator, currentValue) => accumulator + currentValue
+	finalWord = formattedWord.reduce(reducedArray)
+}
+
+function addSyllabeFormattedWord(id) {
+	formattedWord.push(id)
+	reducedArray = (accumulator, currentValue) => accumulator + currentValue
+	finalWord = formattedWord.reduce(reducedArray)
+}
+
 function audioPlay(idAudio) {
 	let audio = new Audio('assets/audio/' + idAudio + '.mp3')
 	audio.play()
-	formattingWord(idAudio)
+	addSyllabeFormattedWord(idAudio)
 	renderHeader(idAudio)
 }
 
@@ -40,11 +57,7 @@ function searchFormattedWord() {
 	renderHeader(null)
 }
 
-function formattingWord(id) {
-	formattedWord.push(id)
-	reducedArray = (accumulator, currentValue) => accumulator + currentValue
-	finalWord = formattedWord.reduce(reducedArray)
-}
+
 
 window.onload = function() {
 	renderHtml()
