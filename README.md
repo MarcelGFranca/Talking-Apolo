@@ -1,16 +1,35 @@
-# Talking-Apolo
+### Talking-Apolo
 
-Meu filho, Apolo tem 6 anos e é autista. Ele ainda não fala, então resolvi fazer esse Silabário para que ele possa usar e de divertir.
+Meu filho, Apolo tem 6 anos e é autista. Ele ainda não fala, então resolvi fazer esse silabário para que ele possa usar e de divertir.
 
-Feito usando Javascript, HTML e CSS, SweetAlert2 e Axios.
+<a href="https://marcelgfranca.github.io/Talking-Apolo/">Link para o Talking Apolo</a>
+
+## Uso
+
+Selecione as sílabas tocando nos botões a depois aperte BUSCAR IMAGEM, que uma imagem com uma imagem correspondente à palavra aparecerá.
+
+## Techs
+
+- Javascript
+- HTML
+- CSS
+- SweetAlert2
+- API do PixaBay
+
+## Todo
 
 Há ainda algumas coisas a serem feitas:
 
-- Transformar em PWA
-- Corrigir algums classes
-- Melhorar o código
-- Colocar sons em todos os botões
+- Colocar sons em todos os botões (feito)
 
-Caso tenha gostado, faça um fork e use.
-Toamra que gostem desse programa, eu fiz com carinho <3
+* Transformar em PWA
+* Corrigir algums classes
+* Melhorar o código
 
+## Contato
+
+Meu e-mail: <a href="mailto:marcelgarciafranca@gmail.com">marcelgarciafranca@gmail.com</a>
+
+Caso tenha gostado, façam forks e usem.
+Caso seja fonoáudiológa e tenha algo feedback, por favor, entre em contato com e-mail, será muito apreciado.
+Espero que gostem desse programa, eu fiz com carinho <3
