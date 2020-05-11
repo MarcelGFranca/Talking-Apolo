@@ -2,7 +2,7 @@
 
 Meu filho, Apolo tem 6 anos e é autista. Ele ainda não fala, então resolvi fazer esse silabário para que ele possa usar e de divertir.
 
-<a href="https://marcelgfranca.github.io/Talking-Apolo/">Link para o Talking Apolo</a>
+<a href="https://marcelgfranca.github.io/Talking-Apolo/" target="_blank">Link para o Talking Apolo</a>
 
 ## Uso
 
